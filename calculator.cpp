@@ -8,29 +8,29 @@ int main() {
         long long result;
         char operation;
 
-        std::cout << "Enter first number: ";                                   //nhập số đầu
+        std::cout << "Enter first number: ";                           
         std::cin >> integer1;
 
-        std::cout << "Enter second number: ";                                       //nhập số thứ 2
+        std::cout << "Enter second number: ";                                       
         std::cin >> integer2;
 
-        std::cout << "Enter third number: ";                                           //nhập số thứ 3
+        std::cout << "Enter third number: ";                                     
         std::cin >> integer3;
 
-        std::cout << "Do you want to add or multiply the numbers? (+/*): ";                    //chọn tính cộng hay nhân
+        std::cout << "Do you want to add or multiply the numbers? (+/*): ";                
         std::cin >> operation;
 
-        if (operation == '+') {                                              //cộng
+        if (operation == '+') {                                          
             result = integer1 + integer2 + integer3;
             std::cout << "Sum is " << result << endl;
-        } else if (operation == '*') {                                    //nhân
+        } else if (operation == '*') {                               
             result = integer1 * integer2 * integer3;
             std::cout << "Product is " << result << endl;
-        } else {                                                  //khi người dùng ko có nhập + hay *
+        } else {                                                  
             std::cout << "Invalid operation!" << endl;
         }
 
-        std::cout << "Do you want to calculate again? (y/n): ";                       //hỏi muốn tính nữa ko
+        std::cout << "Do you want to calculate again? (y/n): ";                   
         std::cin >> input;
 
     } while (input == 'y' || input == 'Y');
