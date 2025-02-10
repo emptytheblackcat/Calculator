@@ -1,4 +1,4 @@
 # Calculator
 A simple calculator.
-Made in C++
+Made in C++.
 Still in development.
